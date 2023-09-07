@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+
+header {
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    box-shadow: rgba(199, 199, 199) 0px 0px 10px 0px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    
+    display: inline;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.7rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: red;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.slogan--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 45rem;
+    width: 120rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56.4rem;
+    height: 42.3rem;
+    border-radius: 1rem;
+    background-color: wheat;
+    overflow: hidden;
+}
+
+
+.slogan-text{
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    color: #FFFFFF;
+    padding: 0.3rem;
+    top: 75%;
+    left: 5%;
+    transform: translate(-3%, -3%);
+    font-size: 2rem;
+
+}
+
+.slogan--image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+}
+
+.slogan--image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:80rem) {
+    .slogan--content{
+        flex-direction: column;
+    }
+    .slogan-text{
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+    }
+    
+}
